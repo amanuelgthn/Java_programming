@@ -4,6 +4,7 @@ public class GuessGame {
     Player p3;
 
     public void startGame() {
+        pguess = new Player();
         p1 = new Player();
         p2 = new Player();
         p3 = new Player();
@@ -16,7 +17,7 @@ public class GuessGame {
         boolean p2isRght = false;
         boolean p3isRght = false;
 
-        int targetNumber = (int) (Math.random() * 10);
+        int targetNumber = pguess.guess();
         System.out.println("I'm thinking of a number between 0 and 9...");
 
         while (true) {
