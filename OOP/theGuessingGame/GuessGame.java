@@ -2,6 +2,7 @@ public class GuessGame {
     Player p1;
     Player p2;
     Player p3;
+    Player pguess;
 
     public void startGame() {
         pguess = new Player();
